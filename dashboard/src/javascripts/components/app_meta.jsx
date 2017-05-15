@@ -14,7 +14,7 @@ class AppMeta extends React.Component {
           <div className="contact">
             <h2>{I18n.t("app_meta.question")}</h2>
             <address>
-              <a href={"mailto:support@surfconext.nl?subject=Question about " + this.props.app.name}>support@surfconext.nl</a>
+              <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Question about " + this.props.app.name}>myUnifiED-admin@cybera.ca</a>
             </address>
           </div>
 
