@@ -299,7 +299,7 @@ I18n.translations.en = {
   },
 
   footer: {
-    surfnet_html: "<a href=\"https://www.surfnet.nl/en\" target=\"_blank\">SURFnet</a>",
+    surfnet_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/MyUnifiED+Wiki\" target=\"_blank\">myUnifiED</a>",
     terms_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/MyUnifiED+Wiki\" target=\"_blank\">Terms of Service</a>",
     contact_html: "<a href=\"mailto:myUnifiED-admin@cybera.ca\">myUnifiED-admin@cybera.ca</a>"
   },
