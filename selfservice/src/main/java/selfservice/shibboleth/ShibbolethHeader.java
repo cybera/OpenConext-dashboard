@@ -6,7 +6,7 @@ public enum ShibbolethHeader {
 
   Name_Id("name-id"),
   Shib_Authenticating_Authority("Shib-Authenticating-Authority"),
-  Shib_DisplayName("Shib-displayName"),
+  Shib_DisplayName("displayName"),
   Shib_Email("Shib-email"),
   Shib_HomeOrg("Shib-homeOrg"),
   Shib_Uid("Shib-uid"),
@@ -26,7 +26,7 @@ public enum ShibbolethHeader {
   Shib_UserStatus("Shib-userStatus"),
   Shib_Accountstatus("Shib-accountstatus"),
   Shib_VoName("Shib-voName"),
-  Shib_MemberOf("Shib-memberOf"),
+  Shib_MemberOf("Shib-memberOf");
   Shib_SchacPersonalUniqueCode("Shib-schacPersonalUniqueCode");
 
   private final String value;
