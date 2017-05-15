@@ -39,7 +39,7 @@ import SearchUser from "./pages/search_user";
 import EditMyIdp from "./pages/edit_my_idp";
 
 import "./locale/en";
-import "./locale/fr";
+import "./locale/nl";
 import "react-select/dist/react-select.css";
 
 class App extends React.Component {
