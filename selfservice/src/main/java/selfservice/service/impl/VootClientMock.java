@@ -14,7 +14,7 @@ public class VootClientMock implements VootClient {
 
   @Override
   public boolean hasAccess(String personId, String groupId) {
-    return personId.endsWith(CSA_ADMIN);
+    return true;
   }
 
   @Override
@@ -29,7 +29,7 @@ public class VootClientMock implements VootClient {
       case "csa":
         return asList(new Group("csa.admins"));
       default:
-        return Collections.emptyList();
+        return asList(new Group("dashboard.admin"));
     }
   }
 }
