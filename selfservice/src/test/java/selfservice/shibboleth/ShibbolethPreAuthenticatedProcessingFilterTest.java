@@ -41,7 +41,7 @@ public class ShibbolethPreAuthenticatedProcessingFilterTest {
 
     assertThat(coinUser.getUid(), is("name-id_value"));
     assertThat(coinUser.getEmail(), is("Shib-email_value"));
-    assertThat(coinUser.getDisplayName(), is("Shib-displayName_value"));
+    assertThat(coinUser.getDisplayName(), is("displayName_value"));
   }
 
   @Test
