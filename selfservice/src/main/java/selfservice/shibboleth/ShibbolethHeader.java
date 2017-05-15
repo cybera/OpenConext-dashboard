@@ -9,7 +9,7 @@ public enum ShibbolethHeader {
   Shib_DisplayName("displayName"),
   Shib_Email("Shib-email"),
   Shib_HomeOrg("Shib-homeOrg"),
-  Shib_Uid("uid"),
+  Shib_Uid("Shib-uid"),
   Shib_SurName("Shib-surName"),
   Shib_GivenName("Shib-givenName"),
   Shib_CommonName("Shib-commonName"),
@@ -26,7 +26,7 @@ public enum ShibbolethHeader {
   Shib_UserStatus("Shib-userStatus"),
   Shib_Accountstatus("Shib-accountstatus"),
   Shib_VoName("Shib-voName"),
-  Shib_MemberOf("is-member-of");
+  Shib_MemberOf("Shib-memberOf");
   Shib_SchacPersonalUniqueCode("Shib-schacPersonalUniqueCode");
 
   private final String value;
