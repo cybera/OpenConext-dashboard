@@ -29,7 +29,7 @@ I18n.translations.en = {
     title: "Dashboard",
     welcome: "Welcome,",
     links: {
-      help_html: "<a href=\"https://wiki.surfnet.nl/display/surfconextdev/Beschikbare+diensten+activeren#Beschikbaredienstenactiveren-HandleidingSURFconextDashboard\" target=\"_blank\">Help SURFconext Dashboard</a>",
+      help_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/MyUnifiED+Wiki\" target=\"_blank\">Help myUnifiED Dashboard</a>",
       logout: "Logout",
       exit: "Exit"
     },
@@ -147,7 +147,7 @@ I18n.translations.en = {
     website: "Website",
     support: "Support pages",
     login: "Login page",
-    registration_info_html: "This Service Provider is available in SURFconext through <a href=\"https://support.surfconext.nl/edugain\" target=\"_blank\">eduGAIN</a>. The Service Provider is registered by the following federation: <a href=\"{{url}}\" target=\"_blank\">{{url}}</a>.",
+    registration_info_html: "This Service Provider is available in myUnifiED through <a href=\"https://support.surfconext.nl/edugain\" target=\"_blank\">eduGAIN</a>. The Service Provider is registered by the following federation: <a href=\"{{url}}\" target=\"_blank\">{{url}}</a>.",
     registration_policy: "Registration policy",
     privacy_statement: "Privacy statement",
     metadata_link: "Metadata"
@@ -253,10 +253,10 @@ I18n.translations.en = {
     connect_title: "Connect {{app}}",
     disconnect: "Deactivate service",
     disconnect_title: "Deactivate connection with {{app}}",
-    done_disconnect_subtitle_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>.",
+    done_disconnect_subtitle_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:myUnifiED-admin@cybera.ca\">myUnifiED-admin@cybera.ca</a>.",
     done_disconnect_title: "Deactivation requested!",
-    done_subtitle_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>.",
-    done_subtitle_with_jira_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl?subject=Question about connection {{jiraKey}}\">support@surfconext.nl</a> and include the following ticket number in the subject: {{jiraKey}}.",
+    done_subtitle_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:myUnifiED-admin@cybera.ca\">myUnifiED-admin@cybera.ca</a>.",
+    done_subtitle_with_jira_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:myUnifiED-admin@cybera.ca?subject=Question about connection {{jiraKey}}\">myUnifiED-admin@cybera.ca</a> and include the following ticket number in the subject: {{jiraKey}}.",
     done_title: "Connection made!",
     forward_permission: {
       after: " to {{app}}.",
@@ -285,7 +285,7 @@ I18n.translations.en = {
   application_usage_panel: {
     title: "Service usage",
     download: "Export",
-    error_html: "Stats are currently unavailable. <a href=\"mailto:support@surfconext.nl\">Contact support</a> for more information."
+    error_html: "Stats are currently unavailable. <a href=\"mailto:myUnifiED-admin@cybera.ca\">Contact support</a> for more information."
   },
 
   contact: {
@@ -311,7 +311,7 @@ I18n.translations.en = {
 
   server_error: {
     title: "You don't have sufficient access right to access the Dashboard application.",
-    description_html: "Please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a> if you think this is incorrect."
+    description_html: "Please contact <a href=\"mailto:myUnifiED-admin@cybera.ca\">myUnifiED-admin@cybera.ca</a> if you think this is incorrect."
   },
 
   logout: {
@@ -321,8 +321,8 @@ I18n.translations.en = {
 
   footer: {
     surfnet_html: "<a href=\"https://www.surfnet.nl/en\" target=\"_blank\">SURFnet</a>",
-    terms_html: "<a href=\"https://wiki.surfnet.nl/display/conextsupport/Terms+of+Service+%28EN%29\" target=\"_blank\">Terms of Service</a>",
-    contact_html: "<a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>"
+    terms_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/MyUnifiED+Wiki\" target=\"_blank\">Terms of Service</a>",
+    contact_html: "<a href=\"mailto:myUnifiED-admin@cybera.ca\">myUnifiED-admin@cybera.ca</a>"
   },
 
   notifications: {
