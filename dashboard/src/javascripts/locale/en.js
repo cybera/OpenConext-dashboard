@@ -339,11 +339,11 @@ I18n.translations.en = {
     entity_id: "Entity ID",
     name: {
       en: "Name (en)",
-      nl: "Name (nl)"
+      nl: "Name (fr)"
     },
     keywords: {
       en: "Keywords (en)",
-      nl: "Keywords (nl)"
+      nl: "Keywords (fr)"
     },
     published_in_edugain: "Published in eduGAIN",
     date_published_in_edugain: "Date published in eduGAIN",
@@ -361,7 +361,7 @@ I18n.translations.en = {
     },
     description: {
       en: "Description (en)",
-      nl: "Description (nl)"
+      nl: "Description (fr)"
     },
     guest_enabled: "Guest access enabled",
     no_consent_required: "Consent disabled",
