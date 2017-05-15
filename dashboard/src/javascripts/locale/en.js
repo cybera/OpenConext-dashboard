@@ -357,7 +357,7 @@ I18n.translations.en = {
   },
 
   footer: {
-    surfnet_html: "<a href=\"https://www.surfnet.nl/en\" target=\"_blank\">SURFnet</a>",
+    surfnet_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Pika</a>",
     terms_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Terms of Service</a>",
     contact_html: "<a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>"
   },
