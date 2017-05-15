@@ -69,8 +69,8 @@ public class ShibbolethPreAuthenticatedProcessingFilterTest {
         CoinUser coinUser = (CoinUser) subject.getPreAuthenticatedPrincipal(requestMock);
 
         assertThat(coinUser.getUid(), is("name-id_value"));
-        assertThat(coinUser.getEmail(), is("Shib-email_value"));
-        assertThat(coinUser.getDisplayName(), is("Shib-displayName_value"));
+        assertThat(coinUser.getEmail(), is("Shib-InetOrgPerson-mail_value"));
+        assertThat(coinUser.getDisplayName(), is("displayName_value"));
     }
 
     @Test
@@ -99,7 +99,7 @@ public class ShibbolethPreAuthenticatedProcessingFilterTest {
         CoinUser coinUser = (CoinUser) subject.getPreAuthenticatedPrincipal(requestMock);
 
         assertThat(coinUser.getUid(), is("name-id_value1"));
-        assertThat(coinUser.getEmail(), is("Shib-email_value1"));
+        assertThat(coinUser.getEmail(), is("Shib-InetOrgPerson-mail_value1"));
 
         assertThat(coinUser.getAttributeMap().get(Shib_EduPersonEntitlement), contains
             ("Shib-eduPersonEntitlement_value1", "Shib-eduPersonEntitlement_value2"));
