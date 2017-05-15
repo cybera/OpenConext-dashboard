@@ -86,13 +86,6 @@ public class Application extends SpringBootServletInitializer {
   }
 
   @Bean
-  @Profile("!dev")
-  public VootClient mockVootClient(Environment environment) {
-    return new VootClientMock();
-  }
-
-  @Bean
-  @Profile("dev")
   public VootClient mockVootClient(Environment environment) {
     return new VootClientMock();
   }
