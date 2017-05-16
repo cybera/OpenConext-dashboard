@@ -84,7 +84,7 @@ I18n.translations.en = {
       },
       interfed_source: {
         name: "Federation source",
-        surfconext: "myUnifiED,
+        surfconext: "myUnifiED",
         edugain: "eduGAIN",
         entree: "Entree"
       },
