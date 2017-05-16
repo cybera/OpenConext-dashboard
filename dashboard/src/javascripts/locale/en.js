@@ -69,7 +69,7 @@ I18n.translations.en = {
       },
       license: {
         has_license_sp: "Yes, with service provider",
-        has_license_surfmarket: "Yes, with SURFmarket",
+        has_license_surfmarket: "Yes, with myUnifiED",
         name: "License",
         not_needed: "Not needed",
         unknown: "Unknown",
@@ -88,7 +88,7 @@ I18n.translations.en = {
       },
       interfed_source: {
         name: "Federation source",
-        surfconext: "SURFconext",
+        surfconext: "myUnifiED,
         edugain: "eduGAIN",
         entree: "Entree"
       },
@@ -98,7 +98,7 @@ I18n.translations.en = {
         research_and_scholarship: "Research and Scholarship"
       },
       strong_authentication: {
-        name: "Supports SURFconext Strong Authentication",
+        name: "Supports myUnifiED Strong Authentication",
         yes: "Yes",
         no: "No"
       },
@@ -155,28 +155,28 @@ I18n.translations.en = {
 
   license_info_panel: {
     title: "License information",
-    has_license_surfmarket_html: "There is a valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
+    has_license_surfmarket_html: "There is a valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>.",
     has_license_sp_html: "A license for  <a href=\"{{serviceUrl}}\" target=\"_blank\">{{serviceName}} can be acquired from the supplier of this service</a>.",
-    no_license_html: "Your institution has no valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
+    no_license_html: "Your institution has no valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>.",
     not_needed_html: "This Service does not require a license.",
     unknown_license: "It is unknown whether a license is required or not.",
     no_license_description_html: "" +
       "<ul>" +
-      "   <li>Your institution can obtain a license from <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.</li>" +
+      "   <li>Your institution can obtain a license from <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>.</li>" +
       "</ul>" +
       "<br />In some cases this license needs to be obtained directly from the service supplier.",
     unknown_license_description_html: "There could be multiple reasons:" +
       "<ul>" +
-      "   <li>SURF or another institution is offering this service for free.</li>" +
+      "   <li>myUnifiED or another institution is offering this service for free.</li>" +
       "   <li>The license needs to be obtained directly from the service supplier.</li>" +
-      "   <li>The license hasn't been added to <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>'s administration yet.</li>" +
+      "   <li>The license hasn't been added to <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>'s administration yet.</li>" +
       "</ul>" +
-      "<p>If necessary, SURFnet will contact the service supplier or <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a> before activating the connection.</p>"
+      "<p>If necessary, myUnifiED will contact the service supplier or <a href=\"https://www.myunified.ca\" target=\"_blank\">myUnifiED</a> before activating the connection.</p>"
   },
 
   license_info: {
     unknown_license: "No license information available",
-    has_license_surfmarket: "License available via SURFmarket",
+    has_license_surfmarket: "License available via myUnifiED",
     has_license_sp: "License available via service supplier",
     no_license: "No license available",
     no_license_needed: "No license needed",
@@ -186,21 +186,27 @@ I18n.translations.en = {
   },
 
   overview_panel: {
-    wiki_info_html: "Extra information is available for this services in the SURFconext <a href=\"{{link}}\" target=\"_blank\">wiki</a>.",
+    wiki_info_html: "Extra information is available for this services in the myUnifiED <a href=\"{{link}}\" target=\"_blank\">wiki</a>.",
     no_description: "The description of this service is not available.",
     description: "Description",
     has_connection: "Active connection",
     no_connection: "Inactive connection",
     how_to_connect: "Read how to activate",
     disconnect: "Read how to deactivate the connection",
+<<<<<<< HEAD
     normen_kader: "Information regarding AVG/GDPR",
     normen_kader_html: "For this service the supplier has published information stating which data they process and where they process this data. You can find this information on the <a href=\"https://wiki.surfnet.nl/pages/viewpage.action?pageId=60689334\" target=\"_blank\">wiki</a>. During 2018 we will incorporate this information in a new version of this Dashboard.",
     no_normen_kader_html: "For this service the supplier has not yet provided AVG/GDPR information; information stating which data they process and where they process this data can be requested at the supplier.",
+=======
+    normen_kader: "Framework of Legal Standards for Cloud Services in Higher Education",
+    normen_kader_html: "{{name}} has published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education <a href=\"{{link}}\" target=\"_blank\">online</a>. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
+    no_normen_kader_html: "{{name}} has not published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
+>>>>>>> More myUnifiED branding changes
     single_tenant_service: "Single tenant service",
-    single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">SURFnet wiki</a>",
+    single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">myUnifiED wiki</a>",
     interfed_source: "Federation source:",
     publish_in_edugain_date: "Published in eduGAIN on:",
-    supports_ssa: "Supports SURFconext Strong Authentication",
+    supports_ssa: "Supports myUnifiED Strong Authentication",
     entity_categories: "Supported Entity Categories",
     entity_category: {
       "http://wwwgeantnet/uri/dataprotection-code-of-conduct/v1": "GÉANT Data Protection Code of Conduct",
@@ -245,8 +251,12 @@ I18n.translations.en = {
     cancel: "Cancel",
     check: "Check the",
     checklist: "Finish this checklist before activating the connection:",
+<<<<<<< HEAD
     processing_agreements: "Check whether your institution needs a <a href=\"https://www.surf.nl/nieuws/2016/08/ondersteuning-surfmarket-bij-sluiten-bewerkersovereenkomsten.html\" target=\"_blank\">processing agreement</a> for this service, and if so, has signed one.",
     comments_description: "Comments will be sent to SURFconext.",
+=======
+    comments_description: "Comments will be sent to myUnifiED.",
+>>>>>>> More myUnifiED branding changes
     comments_placeholder: "Enter comments here...",
     comments_title: "Any additional comments?",
     connect: "Activate service",
@@ -260,7 +270,7 @@ I18n.translations.en = {
     done_title: "Connection made!",
     forward_permission: {
       after: " to {{app}}.",
-      before: "SURFnet has permission to forward the ",
+      before: "myUnifiED has permission to forward the ",
     },
     info_sub_title: "You can activate a connection from this dashboard. We advise you to follow the checklist and check the specific information for this app before you activate.",
     info_title: "Activate connection",
@@ -277,7 +287,7 @@ I18n.translations.en = {
       before: "It is the responsibility of my institution to provide the correct ",
     },
     read: "Read the",
-    single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. SURFnet will contact you to discuss the activation process after it has received your request.",
+    single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. myUnifiED will contact you to discuss the activation process after it has received your request.",
     terms_title: "By requesting an activation you accept these terms",
     wiki: "wiki for this service",
   },
@@ -334,7 +344,7 @@ I18n.translations.en = {
     license: "License",
     connection: "Connection",
     messages: {
-      fcp: "The following Services might not be accessible yet because there is not a license available or no active SURFconext connection."
+      fcp: "The following Services might not be accessible yet because there is not a license available or no active myUnifiED connection."
     }
   },
 
@@ -344,9 +354,9 @@ I18n.translations.en = {
     role: "Role",
     users: "User(s)",
     settings: "Settings for my own institute and services",
-    settings_text: "This section contains several settings of your institute and the Service Provider(s) provided to SURFconext by your institute. These settings are used in SURFconext, for instance in the Where Are You From page. If you would like to change something, please press 'Create change request'.",
-    SURFconextverantwoordelijke: "SURFconext owner",
-    SURFconextbeheerder: "SURFconext maintainer",
+    settings_text: "This section contains several settings of your institute and the Service Provider(s) provided to myUnifiED by your institute. These settings are used in myUnifiED, for instance in the Where Are You From page. If you would like to change something, please press 'Create change request'.",
+    SURFconextverantwoordelijke: "myUnifiED owner",
+    SURFconextbeheerder: "myUnifiED maintainer",
     "Dashboard supergebruiker": "Dashboard Super User",
     services_title: "Services provided by your institute:",
     service_name: "Service name",
@@ -403,7 +413,7 @@ I18n.translations.en = {
     flash: "Authorization policy '{{policyName}}' was successfully {{action}}",
     flash_created: "created",
     flash_deleted: "deleted",
-    flash_first: "This is the first authorization policy for this service. Before it becomes active, the SURFconext Team must manually perform a configuration change. A notification has been sent to the SURFconext Team. They will get in touch with you.",
+    flash_first: "This is the first authorization policy for this service. Before it becomes active, the myUnifiED Team must manually perform a configuration change. A notification has been sent to the myUnifiED Team. They will get in touch with you.",
     flash_updated: "updated",
     new_policy: "New authorization policy",
     how_to: "How-to",
@@ -535,7 +545,7 @@ I18n.translations.en = {
 
   profile: {
     title: "Profile",
-    sub_title: "The following profile data has been provided by your home institution. This data as well as your group membership data (e.g.SURFteams) will be stored in SURFconext and shared with services accessed via SURFconext.",
+    sub_title: "The following profile data has been provided by your home institution. This data as well as your group membership data will be stored in myUnifiED and shared with services accessed via myUnifiED.",
     my_attributes: "My attributes",
     attribute: "Attribute",
     value: "Value",
@@ -545,11 +555,11 @@ I18n.translations.en = {
     role_description: "Description",
     roles: {
       ROLE_DASHBOARD_ADMIN: {
-        name: "SURFconext owner",
+        name: "myUnifiED owner",
         description: "You are authorized on behalf of your institution to manage the service connections"
       },
       ROLE_DASHBOARD_VIEWER: {
-        name: "SURFconext maintainer",
+        name: "myUnifiED maintainer",
         description: "You are authorized on behalf of your institution to view the information about the services"
       },
       ROLE_DASHBOARD_SUPER_USER: {
@@ -632,15 +642,15 @@ I18n.translations.en = {
       },
       "Shib-userStatus": {
         name: "Userstatus",
-        description: "Status of this user in SURFconext"
+        description: "Status of this user in myUnifiED"
       },
       "Shib-accountstatus": {
         name: "Accountstatus",
-        description: "Status of this account in SURFconext"
+        description: "Status of this account in myUnifiED"
       },
       "name-id": {
         name: "Identifier",
-        description: "Status of this account in SURFconext"
+        description: "Status of this account in myUnifiED"
       },
       "Shib-voName": {
         name: "Virtual Organisation Name",
@@ -648,11 +658,11 @@ I18n.translations.en = {
       },
       "Shib-user": {
         name: "Identifier",
-        description: "Status of this account in SURFconext"
+        description: "Status of this account in myUnifiED"
       },
       "Shib-memberOf": {
         name: "Membership",
-        description: "Membership of Virtual Organizations and SURFconext."
+        description: "Membership of Virtual Organizations and myUnifiED."
       }
     }
   }
