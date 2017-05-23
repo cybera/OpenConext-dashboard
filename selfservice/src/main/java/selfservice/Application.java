@@ -87,7 +87,7 @@ public class Application extends SpringBootServletInitializer {
   }
 
   @Bean
-  @Profile("dev")
+  @Profile("!dev")
   public VootClient vootClient(Environment environment,
                                @Value("${voot.accessTokenUri}") String accessTokenUri,
                                @Value("${voot.clientId}") String clientId,
@@ -98,7 +98,7 @@ public class Application extends SpringBootServletInitializer {
   }
 
   @Bean
-  @Profile("!dev")
+  @Profile("dev")
   public VootClient mockVootClient(Environment environment) {
     return new VootClientMock();
   }
