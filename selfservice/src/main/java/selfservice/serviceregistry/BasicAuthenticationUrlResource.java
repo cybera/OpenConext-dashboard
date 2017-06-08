@@ -42,7 +42,8 @@ public class BasicAuthenticationUrlResource extends UrlResource {
     con.setRequestProperty(IF_MODIFIED_SINCE, lastRefresh);
 
     int responseCode = con.getResponseCode();
-    return responseCode != HttpStatus.NOT_MODIFIED.value();
+    //return responseCode != HttpStatus.NOT_MODIFIED.value();
+    return true;
   }
 
   protected void setHeaders(URLConnection con) {
