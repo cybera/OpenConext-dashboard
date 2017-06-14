@@ -74,6 +74,11 @@ I18n.translations.en = {
         not_needed: "Not needed",
         unknown: "Unknown",
       },
+      license_required: {
+        yes: "Yes",
+        no: "No",
+        name: "License Required",
+      },
       used_by_idp: {
         all: "All",
         name: "Offered by my institution",
@@ -129,6 +134,7 @@ I18n.translations.en = {
       license: "License secured",
       licenseStatus: "License required",
       aansluitovereenkomstRefused: "Policy signed",
+      license_required: "License required",
       license_present: {
         na: "n/a",
         no: "No",
@@ -157,15 +163,9 @@ I18n.translations.en = {
 
   license_info_panel: {
     title: "License information",
-<<<<<<< 2841b110e60cca00fbfc66d815dd1062dc50de9e
-    has_license_surfmarket_html: "There is a valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
-    has_license_sp_html: "A license for  <a href=\"{{serviceUrl}}\" target=\"_blank\">{{serviceName}} can be acquired from the supplier of this service</a>.",
-    no_license_html: "Your institution has no valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
-=======
     has_license_surfmarket_html: "There is a valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>.",
     has_license_sp_html: "There is a valid license available via service supplier <a href=\"{{serviceUrl}}\" target=\"_blank\">{{serviceName}}</a>.",
     no_license_html: "Your institution has no valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">myUnifiED</a>.",
->>>>>>> More myUnifiED branding changes
     not_needed_html: "This Service does not require a license.",
     unknown_license: "It is unknown whether a license is required or not.",
     no_license_description_html: "" +
@@ -183,11 +183,12 @@ I18n.translations.en = {
   },
 
   license_info: {
+    license_needed: "License needed",
+    no_license_needed: "No license needed",
     unknown_license: "No license information available",
-    has_license_surfmarket: "License available via myUnifiED",
+    license_surfmarket: "License available via myUnifiED",
     has_license_sp: "License available via service supplier",
     no_license: "No license available",
-    no_license_needed: "No license needed",
     license_info: "Read how to obtain a license",
     license_unknown_info: "Read more",
     valid: "License is valid untill {{date}}"
@@ -201,24 +202,14 @@ I18n.translations.en = {
     no_connection: "Inactive connection",
     how_to_connect: "Read how to activate",
     disconnect: "Read how to deactivate the connection",
-<<<<<<< 2841b110e60cca00fbfc66d815dd1062dc50de9e
     normen_kader: "Information regarding AVG/GDPR",
     normen_kader_html: "For this service the supplier has published information stating which data they process and where they process this data. You can find this information on the <a href=\"https://wiki.surfnet.nl/pages/viewpage.action?pageId=60689334\" target=\"_blank\">wiki</a>. During 2018 we will incorporate this information in a new version of this Dashboard.",
     no_normen_kader_html: "For this service the supplier has not yet provided AVG/GDPR information; information stating which data they process and where they process this data can be requested at the supplier.",
-=======
-    normen_kader: "Framework of Legal Standards for Cloud Services in Higher Education",
-    normen_kader_html: "{{name}} has published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education <a href=\"{{link}}\" target=\"_blank\">online</a>. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
-    no_normen_kader_html: "{{name}} has not published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
->>>>>>> More myUnifiED branding changes
     single_tenant_service: "Single tenant service",
     single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">myUnifiED wiki</a>",
     interfed_source: "Federation source:",
     publish_in_edugain_date: "Published in eduGAIN on:",
-<<<<<<< 2841b110e60cca00fbfc66d815dd1062dc50de9e
-    supports_ssa: "Supports SURFsecureID",
-=======
     supports_ssa: "Supports myUnifiED Strong Authentication",
->>>>>>> More myUnifiED branding changes
     entity_categories: "Supported Entity Categories",
     entity_category: {
       "http://wwwgeantnet/uri/dataprotection-code-of-conduct/v1": "GÉANT Data Protection Code of Conduct",
@@ -293,12 +284,8 @@ I18n.translations.en = {
     cancel: "Cancel",
     check: "Check the",
     checklist: "Finish this checklist before activating the connection:",
-<<<<<<< 2841b110e60cca00fbfc66d815dd1062dc50de9e
     processing_agreements: "Check whether your institution needs a <a href=\"https://www.surf.nl/nieuws/2016/08/ondersteuning-surfmarket-bij-sluiten-bewerkersovereenkomsten.html\" target=\"_blank\">processing agreement</a> for this service, and if so, has signed one.",
-    comments_description: "Comments will be sent to SURFconext.",
-=======
     comments_description: "Comments will be sent to myUnifiED.",
->>>>>>> More myUnifiED branding changes
     comments_placeholder: "Enter comments here...",
     comments_title: "Any additional comments?",
     connect: "Activate service",

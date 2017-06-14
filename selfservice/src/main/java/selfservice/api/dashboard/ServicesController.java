@@ -97,6 +97,7 @@ public class ServicesController extends BaseController {
           service.getWikiUrl(),
           service.getSupportMail(),
           String.valueOf(service.isConnected()),
+          String.valueOf(service.isLicenseRequired()),
           service.getLicenseStatus().name(),
           String.valueOf(service.isPublishedInEdugain()),
           String.valueOf(service.isExampleSingleTenant()),
@@ -106,7 +107,7 @@ public class ServicesController extends BaseController {
 
     Stream<String[]> headers = Stream.<String[]>of(new String[] {
         "id", "name", "entityID", "description", "app-url", "wiki-url", "support-mail",
-        "connected", "licenseStatus",
+        "connected", "licenseRequired",
         "publishedInEdugain", "singleTenant", "strongAuthentication",
     "arpEnabled", "arpAttributes"});
 

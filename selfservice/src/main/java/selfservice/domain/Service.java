@@ -65,6 +65,7 @@ public class Service implements Comparable<Service>, Serializable {
   private Map<String, String> names = new HashMap<>();
   private Map<String, String> motivations = new HashMap<>();
   private Map<String, String> descriptions = new HashMap<>();
+  private Map<String, String> licenseDetails = new HashMap<>();
 
   private boolean connected;
   private boolean idpVisibleOnly;
@@ -75,6 +76,7 @@ public class Service implements Comparable<Service>, Serializable {
   private boolean strongAuthentication;
   private boolean noConsentRequired;
   private boolean aansluitovereenkomstRefused;
+  private boolean licenseRequired;
 
   private PrivacyInfo privacyInfo;
 
@@ -313,6 +315,22 @@ public class Service implements Comparable<Service>, Serializable {
 
   public LicenseStatus getLicenseStatus() {
     return licenseStatus;
+  }
+
+  public boolean isLicenseRequired() {
+    return licenseRequired;
+  }
+
+  public void setLicenseRequired(boolean licenseRequired) {
+    this.licenseRequired = licenseRequired;
+  }
+
+  public Map<String, String> getLicenseDetails() {
+    return licenseDetails;
+  }
+
+  public void setLicenseDetails(Map<String, String> licenseDetails) {
+    this.licenseDetails = licenseDetails;
   }
 
   public void setLicenseStatus(LicenseStatus licenseStatus) {
