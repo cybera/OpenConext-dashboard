@@ -77,6 +77,7 @@ I18n.translations.en = {
       license_required: {
         yes: "Yes",
         no: "No",
+        name: "License",
       },
       used_by_idp: {
         all: "All",
