@@ -450,19 +450,6 @@ class AppOverview extends React.Component {
         return sourceFacetValues.length === 0 || sourceFacetValues.indexOf(app.entityCategories1) > -1 || sourceFacetValues.indexOf(app.entityCategories2) > -1;
       }.bind(this)
     }, {
-      name: I18n.t("facets.static.license.name"),
-      searchValue: "license",
-      values: [
-        {value: I18n.t("facets.static.license.has_license_surfmarket"), searchValue: "HAS_LICENSE_SURFMARKET"},
-        {value: I18n.t("facets.static.license.has_license_sp"), searchValue: "HAS_LICENSE_SP"},
-        {value: I18n.t("facets.static.license.not_needed"), searchValue: "NOT_NEEDED"},
-        {value: I18n.t("facets.static.license.unknown"), searchValue: "UNKNOWN"},
-      ],
-      filterApp: function (app) {
-        const licenseFacetValues = this.state.activeFacets["license"] || [];
-        return licenseFacetValues.length === 0 || licenseFacetValues.indexOf(app.licenseStatus) > -1;
-      }.bind(this)
-    }, {
       name: I18n.t("facets.static.license_required.name"),
       searchValue: "license_required",
       values: [
