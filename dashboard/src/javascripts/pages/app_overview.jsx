@@ -171,7 +171,7 @@ class AppOverview extends React.Component {
     return (
       <tr key={app.id} onClick={e => this.handleShowAppDetail(e, app)}>
         <td><Link to={`apps/${app.id}/overview`}>{app.name}</Link></td>
-        <td>{ app.licenseRequired }</td>
+        <YesNo value={ app.licenseRequired } />
         <YesNo value={app.connected}/>
         {connect}
       </tr>
