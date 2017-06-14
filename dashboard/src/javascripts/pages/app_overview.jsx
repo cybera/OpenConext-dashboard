@@ -185,9 +185,9 @@ class AppOverview extends React.Component {
   licenseRequiredClassName(app) {
     switch (app.licenseRequired) {
     case true:
-      return "LICENSE_REQUIRED";
+      return "yes";
     case false:
-      return "NO_LICENSE_REQUIRED";
+      return "no";
     }
   }
 
@@ -305,9 +305,10 @@ class AppOverview extends React.Component {
           return facetValue.searchValue === "yes" ? app.connected : !app.connected;
         });
         break;
-      case "license":
+      case "license_required":
         filter(facet, (app, facetValue) => {
-          return app.licenseStatus === facetValue.searchValue;
+          const licenseRequired = app.licenseRequired || false;
+          return facetValue.searchValue === "yes" ? licenseRequired : !licenseRequired;
         });
         break;
       case "interfed_source":
@@ -437,14 +438,13 @@ class AppOverview extends React.Component {
       }.bind(this)
     }, {
       name: I18n.t("facets.static.license_required.name"),
-      searchValue: "license",
+      searchValue: "license_required",
       values: [
-        { value: I18n.t("facets.static.license_required.yes"), searchValue: "LICENSE_REQUIRED" },
-        { value: I18n.t("facets.static.license_required.no"), searchValue: "NO_LICENSE_REQUIRED" },
+        { value: I18n.t("facets.static.license_required.yes"), searchValue: "yes" },
+        { value: I18n.t("facets.static.license_required.no"), searchValue: "no" },
       ],
       filterApp: function(app) {
-        const licenseFacetValues = this.state.activeFacets["license"] || [];
-        return licenseFacetValues.length === 0 || licenseFacetValues.indexOf(app.licenseStatus) > -1;
+        return this.filterYesNoFacet("license_required", app.licenseRequired);
       }.bind(this)
     }, {
       name: I18n.t("facets.static.strong_authentication.name"),
