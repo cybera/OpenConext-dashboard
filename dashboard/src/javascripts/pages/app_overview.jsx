@@ -181,9 +181,9 @@ class AppOverview extends React.Component {
   licenseRequiredClassName(app) {
     switch (app.licenseRequired) {
     case true:
-      return "LICENSE_REQUIRED";
+      return "yes";
     case false:
-      return "NO_LICENSE_REQUIRED";
+      return "no";
     }
   }
 
@@ -296,56 +296,51 @@ class AppOverview extends React.Component {
 
     facets.forEach(facet => {
       switch (facet.searchValue) {
-        case "connection":
-          filter(facet, (app, facetValue) => {
-            return facetValue.searchValue === "yes" ? app.connected : !app.connected;
-          });
-          break;
-        case "license":
-          filter(facet, (app, facetValue) => {
-            return app.licenseStatus === facetValue.searchValue;
-          });
-          break;
-        case "interfed_source":
-          filter(facet, (app, facetValue) => {
-            return app.interfedSource === facetValue.searchValue;
-          });
-          break;
-        case "entity_category":
-          filter(facet, (app, facetValue) => {
-            return app.entityCategories1 === facetValue.searchValue || app.entityCategories2 === facetValue.searchValue;
-          });
-          break;
-        case "used_by_idp":
-          filter(facet, (app, facetValue) => {
-            const usedByIdp = currentUser.getCurrentIdp().institutionId === app.institutionId;
-            return facetValue.searchValue === "yes" ? usedByIdp : !usedByIdp;
-          });
-          break;
-        case "published_edugain":
-          filter(facet, (app, facetValue) => {
-            const published = app.publishedInEdugain || false;
-            return facetValue.searchValue === "yes" ? published : !published;
-          });
-          break;
-        case "strong_authentication":
-          filter(facet, (app, facetValue) => {
-            const strongAuthentication = app.strongAuthentication || false;
-            return facetValue.searchValue === "yes" ? strongAuthentication : !strongAuthentication;
-          });
-          break;
-        case "attributes":
-          filter(facet, (app, facetValue) => {
-            const requiredAttributes = Object.keys(app.arp.attributes);
-            return requiredAttributes.length === 0 || requiredAttributes.indexOf(facetValue.searchValue) > -1;
-          });
-          break;
-        default:
-          filter(facet, (app, facetValue) => {
-            const categories = me.normalizeCategories(app);
-            const appTags = categories[facet.name] || [];
-            return appTags.indexOf(facetValue.value) > -1;
-          });
+      case "connection":
+        filter(facet, (app, facetValue) => {
+          return facetValue.searchValue === "yes" ? app.connected : !app.connected;
+        });
+        break;
+      case "license_required":
+        filter(facet, (app, facetValue) => {
+          const licenseRequired = app.licenseRequired || false;
+          return facetValue.searchValue === "yes" ? licenseRequired : !licenseRequired;
+        });
+        break;
+      case "interfed_source":
+        filter(facet, (app, facetValue) => {
+          return app.interfedSource === facetValue.searchValue;
+        });
+        break;
+      case "entity_category":
+        filter(facet, (app, facetValue) => {
+          return app.entityCategories1 === facetValue.searchValue || app.entityCategories2 === facetValue.searchValue;
+        });
+        break;
+      case "used_by_idp":
+        filter(facet, (app, facetValue) => {
+          const usedByIdp = currentUser.getCurrentIdp().institutionId === app.institutionId;
+          return facetValue.searchValue === "yes" ? usedByIdp : !usedByIdp;
+        });
+        break;
+      case "published_edugain":
+        filter(facet, (app, facetValue) => {
+          const published = app.publishedInEdugain || false;
+          return facetValue.searchValue === "yes" ? published : !published;
+        });
+        break;
+      case "strong_authentication":
+        filter(facet, (app, facetValue) => {
+          const strongAuthentication = app.strongAuthentication || false;
+          return facetValue.searchValue === "yes" ? strongAuthentication : !strongAuthentication;
+        });
+        break;
+      default:
+        filter(facet, (app, facetValue) => {
+          const categories = me.normalizeCategories(app);
+          const appTags = categories[facet.name] || [];
+          return appTags.indexOf(facetValue.value) > -1;
+        });
       }
     });
   }
@@ -448,14 +443,13 @@ class AppOverview extends React.Component {
       }.bind(this)
     }, {
       name: I18n.t("facets.static.license_required.name"),
-      searchValue: "license",
+      searchValue: "license_required",
       values: [
-        { value: I18n.t("facets.static.license_required.yes"), searchValue: "LICENSE_REQUIRED" },
-        { value: I18n.t("facets.static.license_required.no"), searchValue: "NO_LICENSE_REQUIRED" },
+        { value: I18n.t("facets.static.license_required.yes"), searchValue: "yes" },
+        { value: I18n.t("facets.static.license_required.no"), searchValue: "no" },
       ],
       filterApp: function(app) {
-        const licenseFacetValues = this.state.activeFacets["license"] || [];
-        return licenseFacetValues.length === 0 || licenseFacetValues.indexOf(app.licenseStatus) > -1;
+        return this.filterYesNoFacet("license_required", app.licenseRequired);
       }.bind(this)
     }, {
       name: I18n.t("facets.static.strong_authentication.name"),
