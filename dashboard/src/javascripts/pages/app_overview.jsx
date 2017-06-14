@@ -120,7 +120,7 @@ class AppOverview extends React.Component {
               <thead>
               <tr>
                 {this.renderSortableHeader("percent_30", "name")}
-                {this.renderSortableHeader("percent_20", "licenseStatus")}
+                {this.renderSortableHeader("percent_15", "license_required")}
                 {this.renderSortableHeader("percent_20 bool", "aansluitovereenkomstRefused")}
                 {this.renderSortableHeader("percent_20 bool", "connected")}
                 {connect}
@@ -164,7 +164,7 @@ class AppOverview extends React.Component {
     return (
       <tr key={app.id} onClick={e => this.handleShowAppDetail(e, app)}>
         <td><Link to={`apps/${app.id}/overview`}>{app.name}</Link></td>
-        {this.renderLicenseNeeded(app)}
+        <td>{ app.isLicenseRequired }</td>
         <YesNo value={!app.aansluitovereenkomstRefused}/>
         <YesNo value={app.connected}/>
         <td className="right">
@@ -174,49 +174,19 @@ class AppOverview extends React.Component {
     );
   }
 
-  licenseStatusClassName(app) {
-    switch (app.licenseStatus) {
-      case "HAS_LICENSE_SURFMARKET":
-      case "HAS_LICENSE_SP":
-        return "yes";
-      case "NO_LICENSE":
-        return "no";
-      default:
-        return "";
+  licenseRequiredClassName(app) {
+    switch (app.licenseRequired) {
+    case true:
+      return "LICENSE_REQUIRED";
+    case false:
+      return "NO_LICENSE_REQUIRED";
     }
   }
 
-  renderLicenseNeeded(app) {
+  renderLicenseRequired(app) {
     return (
       <td
-        className={`${this.licenseStatusClassName(app)}`}>{I18n.t("facets.static.license." + app.licenseStatus.toLowerCase())}</td>
-    );
-  }
-
-  renderLicensePresent(app) {
-    let licensePresent = "unknown";
-
-    switch (app.licenseStatus) {
-      case "HAS_LICENSE_SURFMARKET":
-        if (!app.hasCrmLink) {
-          licensePresent = "unknown";
-        } else {
-          licensePresent = app.license ? "yes" : "no";
-        }
-        break;
-      case "HAS_LICENSE_SP":
-        licensePresent = "unknown";
-        break;
-      case "NOT_NEEDED":
-        licensePresent = "na";
-        break;
-      default:
-        licensePresent = "unknown";
-        break;
-    }
-
-    return (
-      <td className={licensePresent}>{I18n.t("apps.overview.license_present." + licensePresent)}</td>
+        className={this.licenseRequiredClassName(app)}>{I18n.t("facets.static.license_required." + app.licenseRequired.toLowerCase())}</td>
     );
   }
 
@@ -488,6 +458,17 @@ class AppOverview extends React.Component {
         {value: I18n.t("facets.static.license.unknown"), searchValue: "UNKNOWN"},
       ],
       filterApp: function (app) {
+        const licenseFacetValues = this.state.activeFacets["license"] || [];
+        return licenseFacetValues.length === 0 || licenseFacetValues.indexOf(app.licenseStatus) > -1;
+      }.bind(this)
+    }, {
+      name: I18n.t("facets.static.license_required.name"),
+      searchValue: "license",
+      values: [
+        { value: I18n.t("facets.static.license_required.yes"), searchValue: "LICENSE_REQUIRED" },
+        { value: I18n.t("facets.static.license_required.no"), searchValue: "NO_LICENSE_REQUIRED" },
+      ],
+      filterApp: function(app) {
         const licenseFacetValues = this.state.activeFacets["license"] || [];
         return licenseFacetValues.length === 0 || licenseFacetValues.indexOf(app.licenseStatus) > -1;
       }.bind(this)

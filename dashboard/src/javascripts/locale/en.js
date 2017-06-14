@@ -74,6 +74,10 @@ I18n.translations.en = {
         not_needed: "Not needed",
         unknown: "Unknown",
       },
+      license_required: {
+        yes: "Yes",
+        no: "No",
+      },
       used_by_idp: {
         all: "All",
         name: "Offered by my institution",
@@ -129,6 +133,7 @@ I18n.translations.en = {
       license: "License secured",
       licenseStatus: "License required",
       aansluitovereenkomstRefused: "Policy signed",
+      license_required: "License required",
       license_present: {
         na: "n/a",
         no: "No",
