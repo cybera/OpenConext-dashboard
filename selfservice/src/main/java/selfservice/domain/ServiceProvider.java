@@ -42,7 +42,8 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
   private boolean idpVisibleOnly;
   private boolean policyEnforcementDecisionRequired;
   private boolean exampleSingleTenant;
-
+  private final boolean licenseRequired;
+  private final String licenseDetails;
   private ARP arp;
 
   private Map<String, String> urls = new HashMap<>();
@@ -77,6 +78,9 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
       this.arp = ARP.noArp();
     }
 
+
+    this.licenseRequired = booleanValue(metaData.get("coin:license_required"));
+    this.licenseDetails = (String) metaData.get("coin:license_details");
 
     addUrl("en", (String) metaData.get("url:en"));
     addUrl("nl", (String) metaData.get("url:nl"));
@@ -158,6 +162,14 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
 
   public String getEntityCategories2() {
     return entityCategories2;
+  }
+
+  public boolean isLicenseRequired() {
+    return licenseRequired;
+  }
+
+  public String getLicenseDeails() {
+    return licenseDetails;
   }
 
   @Override

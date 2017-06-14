@@ -101,6 +101,7 @@ public class ServicesServiceImpl implements ServicesService {
     service.setNames(csp.getSp().getNames());
     service.setDescriptions(csp.getSp().getDescriptions());
     service.setNoConsentRequired(csp.getSp().isNoConsentRequired());
+    service.setLicenseRequired(csp.getSp().isLicenseRequired());
   }
 
   private String normalizeEmail(String email) {

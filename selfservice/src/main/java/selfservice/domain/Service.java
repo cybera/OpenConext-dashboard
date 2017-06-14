@@ -74,6 +74,7 @@ public class Service implements Comparable<Service>, Serializable {
   private boolean policyEnforcementDecisionRequired;
   private boolean strongAuthentication;
   private boolean noConsentRequired;
+  private boolean licenseRequired;
 
   private LicenseStatus licenseStatus;
 
@@ -310,6 +311,14 @@ public class Service implements Comparable<Service>, Serializable {
 
   public LicenseStatus getLicenseStatus() {
     return licenseStatus;
+  }
+
+  public boolean isLicenseRequired() {
+    return licenseRequired;
+  }
+
+  public void setLicenseRequired(boolean licenseRequired) {
+    this.licenseRequired = licenseRequired;
   }
 
   public void setLicenseStatus(LicenseStatus licenseStatus) {
