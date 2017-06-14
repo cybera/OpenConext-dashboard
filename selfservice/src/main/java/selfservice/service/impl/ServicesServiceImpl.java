@@ -84,6 +84,7 @@ public class ServicesServiceImpl implements ServicesService {
     service.setMotivations(sp.getArpMotivations());
     service.setNormenkaderPresent(sp.getPrivacyInfo().isGdprIsInWiki());
     service.setAansluitovereenkomstRefused(sp.isAansluitovereenkomstRefused());
+    service.setLicenseRequired(sp.isLicenseRequired());
   }
 
   private String mailOfContactPerson(ContactPerson contactPerson) {

@@ -52,6 +52,8 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
 
   private ARP arp;
   private PrivacyInfo privacyInfo;
+  private final boolean licenseRequired;
+  private final String licenseDetails;
 
   private Map<String, String> urls = new HashMap<>();
   private String wikiUrlNl;
@@ -101,6 +103,9 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
     if (StringUtils.hasText(typeOfService)) {
       this.typeOfServicesNl = Arrays.asList(typeOfService.split(","));
     }
+
+    this.licenseRequired = booleanValue(metaData.get("coin:license_required"));
+    this.licenseDetails = (String) metaData.get("coin:license_details");
 
     addUrl("en", (String) metaData.get("url:en"));
     addUrl("nl", (String) metaData.get("url:nl"));
@@ -220,6 +225,14 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
 
   public String getEntityCategories2() {
     return entityCategories2;
+  }
+
+  public boolean isLicenseRequired() {
+    return licenseRequired;
+  }
+
+  public String getLicenseDeails() {
+    return licenseDetails;
   }
 
   @Override
