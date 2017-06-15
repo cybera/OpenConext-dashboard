@@ -7,7 +7,7 @@ class LicenseInfo extends React.Component {
   render() {
     switch (this.props.app.licenseRequired) {
     case true:
-      return this.renderLicenseRequired();
+      return this.renderLicenseRequired(this.props.app);
     case false:
       return this.renderNoLicenseRequired();
     default:
@@ -23,9 +23,9 @@ class LicenseInfo extends React.Component {
     return classNames;
   }
 
-  renderLicenseRequired() {
+  renderLicenseRequired(app) {
     const licenseRequired = I18n.t("license_info.license_needed");
-    const licenseDetails = this.props.app.licenseDetails;
+    const licenseDetails = app.licenseDetails.en;
     return (
       <div className={this.renderSplitClass("license yes")}>
         <i className="fa fa-file-text-o"></i>
