@@ -53,9 +53,9 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
   private ARP arp;
   private PrivacyInfo privacyInfo;
   private final boolean licenseRequired;
-  private final String licenseDetails;
 
   private Map<String, String> urls = new HashMap<>();
+  private Map<String, String> licenseDetails = new HashMap<>();
   private String wikiUrlNl;
   private String wikiUrlEn;
   private boolean strongAuthenticationSupported;
@@ -105,7 +105,8 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
     }
 
     this.licenseRequired = booleanValue(metaData.get("coin:license_required"));
-    this.licenseDetails = (String) metaData.get("coin:license_details");
+    addLicenseDetail("en", (String) metaData.get("coin:license_details:en"));
+    addLicenseDetail("nl", (String) metaData.get("coin:license_details:nl"));
 
     addUrl("en", (String) metaData.get("url:en"));
     addUrl("nl", (String) metaData.get("url:nl"));
@@ -231,8 +232,18 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
     return licenseRequired;
   }
 
-  public String getLicenseDeails() {
+  public Map<String, String> getLicenseDetails() {
     return licenseDetails;
+  }
+
+  public String getLicenseDetail() {
+    return CollectionUtils.isEmpty(this.licenseDetails) ? null : licenseDetails.values().iterator().next();
+  }
+
+  private void addLicenseDetail(String lang, String licenseDetail) {
+    if (StringUtils.hasText(licenseDetail)) {
+      this.licenseDetails.put(lang, licenseDetail);
+    }
   }
 
   @Override
