@@ -42,11 +42,11 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
   private boolean exampleSingleTenant;
 
   private final boolean licenseRequired;
-  private final String licenseDetails;
 
   private final ARP arp;
 
   private final Map<String, String> urls = new HashMap<>();
+  private final Map<String, String> licenseDetails = new HashMap<>();
 
   @SuppressWarnings("unchecked")
   public ServiceProvider(Map<String, Object> metaData) {
@@ -68,7 +68,8 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
     this.arp = metaData.containsKey("attributes") ? ARP.fromAttributes((List<String>) metaData.get("attributes")) : ARP.fromRestResponse(new HashMap<>());
 
     this.licenseRequired = booleanValue(metaData.get("coin:license_required"));
-    this.licenseDetails = (String) metaData.get("coin:license_details");
+    addLicenseDetail("en", (String) metaData.get("coin:license_details:en"));
+    addLicenseDetail("nl", (String) metaData.get("coin:license_details:nl"));
 
     addUrl("en", (String) metaData.get("url:en"));
     addUrl("nl", (String) metaData.get("url:nl"));
@@ -156,8 +157,18 @@ public class ServiceProvider extends Provider implements Serializable, Cloneable
     return licenseRequired;
   }
 
-  public String getLicenseDeails() {
+  public Map<String, String> getLicenseDetails() {
     return licenseDetails;
+  }
+
+  public String getLicenseDetail() {
+    return CollectionUtils.isEmpty(this.licenseDetails) ? null : licenseDetails.values().iterator().next();
+  }
+
+  private void addLicenseDetail(String lang, String licenseDetail) {
+    if (StringUtils.hasText(licenseDetail)) {
+      this.licenseDetails.put(lang, licenseDetail);
+    }
   }
 
   @Override
