@@ -65,6 +65,7 @@ public class Service implements Comparable<Service>, Serializable {
   private List<Category> categories = new ArrayList<>();
   private Map<String, String> names = new HashMap<>();
   private Map<String, String> descriptions = new HashMap<>();
+  private Map<String, String> licenseDetails = new HashMap<>();
 
   private boolean connected;
   private boolean hasCrmLink;
@@ -355,6 +356,14 @@ public class Service implements Comparable<Service>, Serializable {
 
   public void setLicenseRequired(boolean licenseRequired) {
     this.licenseRequired = licenseRequired;
+  }
+
+  public Map<String, String> getLicenseDetails() {
+    return licenseDetails;
+  }
+
+  public void setLicenseDetails(Map<String, String> licenseDetails) {
+    this.licenseDetails = licenseDetails;
   }
 
   public void setLicenseStatus(LicenseStatus licenseStatus) {
