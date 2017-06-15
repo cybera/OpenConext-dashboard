@@ -181,11 +181,12 @@ I18n.translations.en = {
   },
 
   license_info: {
+    license_needed: "License needed",
+    no_license_needed: "No license needed",
     unknown_license: "No license information available",
-    has_license_surfmarket: "License available via myUnifiED",
+    license_surfmarket: "License available via myUnifiED",
     has_license_sp: "License available via service supplier",
     no_license: "No license available",
-    no_license_needed: "No license needed",
     license_info: "Read how to obtain a license",
     license_unknown_info: "Read more",
     valid: "License is valid untill {{date}}"
