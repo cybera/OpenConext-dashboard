@@ -113,7 +113,7 @@ class PolicyOverview extends React.Component {
             <Link to={"/policies/new"} className="t-button policy-button">
               <i className="fa fa-plus"/> {I18n.t("policies.new_policy")}
             </Link>
-            <a href="https://wiki.surfnet.nl/display/surfconextdev/Autorisatieregels" target="_blank" className="t-button policy-button how-to">
+            <a href="https://wiki.cybera.ca/display/KFPC/Authorization+Policies" target="_blank" className="t-button policy-button how-to">
               { I18n.t("policies.how_to") }
             </a>
           </div>
