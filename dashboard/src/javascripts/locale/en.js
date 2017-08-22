@@ -198,17 +198,11 @@ I18n.translations.en = {
     description: "Description",
     has_connection: "Active connection",
     no_connection: "Inactive connection",
-    how_to_connect: "Read how to activate",
-    disconnect: "Read how to deactivate the connection",
-<<<<<<< HEAD
+    how_to_connect: "Click to activate",
+    disconnect: "Click to deactivate the connection",
     normen_kader: "Information regarding AVG/GDPR",
     normen_kader_html: "For this service the supplier has published information stating which data they process and where they process this data. You can find this information on the <a href=\"https://wiki.surfnet.nl/pages/viewpage.action?pageId=60689334\" target=\"_blank\">wiki</a>. During 2018 we will incorporate this information in a new version of this Dashboard.",
     no_normen_kader_html: "For this service the supplier has not yet provided AVG/GDPR information; information stating which data they process and where they process this data can be requested at the supplier.",
-=======
-    normen_kader: "Framework of Legal Standards for Cloud Services in Higher Education",
-    normen_kader_html: "{{name}} has published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education <a href=\"{{link}}\" target=\"_blank\">online</a>. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
-    no_normen_kader_html: "{{name}} has not published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">myUnifiED website</a>",
->>>>>>> More myUnifiED branding changes
     single_tenant_service: "Single tenant service",
     single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">myUnifiED wiki</a>",
     interfed_source: "Federation source:",
@@ -258,12 +252,8 @@ I18n.translations.en = {
     cancel: "Cancel",
     check: "Check the",
     checklist: "Finish this checklist before activating the connection:",
-<<<<<<< HEAD
     processing_agreements: "Check whether your institution needs a <a href=\"https://www.surf.nl/nieuws/2016/08/ondersteuning-surfmarket-bij-sluiten-bewerkersovereenkomsten.html\" target=\"_blank\">processing agreement</a> for this service, and if so, has signed one.",
-    comments_description: "Comments will be sent to SURFconext.",
-=======
     comments_description: "Comments will be sent to myUnifiED.",
->>>>>>> More myUnifiED branding changes
     comments_placeholder: "Enter comments here...",
     comments_title: "Any additional comments?",
     connect: "Activate service",
