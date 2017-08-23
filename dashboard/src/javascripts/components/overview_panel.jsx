@@ -195,7 +195,7 @@ class OverviewPanel extends React.Component {
     let disconnect = null;
     if (currentUser.dashboardAdmin) {
       disconnect = <p>
-        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Disconnect " + this.props.app.name} + "&body='Please disconnect service for: '">{I18n.t("overview_panel.disconnect")}</a>
+        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Disconnect " + this.props.app.name + "&body='Please disconnect service for: '"}>{I18n.t("overview_panel.disconnect")}</a>
        </p>;
       </p>;
     }
