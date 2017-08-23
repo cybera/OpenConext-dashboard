@@ -181,7 +181,8 @@ class OverviewPanel extends React.Component {
     let disconnect = null;
     if (currentUser.dashboardAdmin) {
       disconnect = <p>
-        <Link to={`mailto:email@gmail.com?subject=subject&body=`}>{I18n.t("overview_panel.disconnect")}</Link>
+        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Disconnect " + this.props.app.name} + "&body='Please disconnect service for: '">{I18n.t("overview_panel.disconnect")}</a>
+       </p>;
       </p>;
     }
 
@@ -201,7 +202,7 @@ class OverviewPanel extends React.Component {
     let connect = null;
     if (currentUser.dashboardAdmin) {
       connect = <p>
-        <Link to={`mailto:email@gmail.com?subject=subject&body=`}>{I18n.t("overview_panel.how_to_connect")}</Link>
+        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Connect " + this.props.app.name + "&body='Please connect service for: '"}>{I18n.t("overview_panel.how_to_connect")}</a>
       </p>;
     }
 
