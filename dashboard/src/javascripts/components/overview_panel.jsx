@@ -191,12 +191,13 @@ class OverviewPanel extends React.Component {
 
   renderHasConnection() {
     const { currentUser } = this.context;
+    const currentIdp = currentUser.getCurrentIdp();
 
     let disconnect = null;
     if (currentUser.dashboardAdmin) {
       disconnect = <p>
-        <Link to={`/apps/${this.props.app.id}/how_to_connect`}>{I18n.t("overview_panel.disconnect")}</Link>
-      </p>;
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=De-Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email} target="_blank">{I18n.t("overview_panel.disconnect")}</a>
+       </p>;
     }
 
     return (
@@ -211,11 +212,12 @@ class OverviewPanel extends React.Component {
 
   renderNoConnection() {
     const { currentUser } = this.context;
+    const currentIdp = currentUser.getCurrentIdp();
 
     let connect = null;
     if (currentUser.dashboardAdmin) {
       connect = <p>
-        <Link to={`/apps/${this.props.app.id}/how_to_connect`}>{I18n.t("overview_panel.how_to_connect")}</Link>
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email} target="_blank">{I18n.t("overview_panel.how_to_connect")}</a>
       </p>;
     }
 
