@@ -196,7 +196,7 @@ class OverviewPanel extends React.Component {
     let disconnect = null;
     if (currentUser.dashboardAdmin) {
       disconnect = <p>
-        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Disconnect service" + this.props.app.name + "&body=Please disconnect service for: " + currentIdp.names.en}>{I18n.t("overview_panel.disconnect")}</a>
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=De-Activate"}>{I18n.t("overview_panel.disconnect")}</a>
        </p>;
     }
 
@@ -217,7 +217,7 @@ class OverviewPanel extends React.Component {
     let connect = null;
     if (currentUser.dashboardAdmin) {
       connect = <p>
-        <a href={"mailto:myUnifiED-admin@cybera.ca?subject=Connect service " + this.props.app.name + "&body=Please connect service for: " + currentIdp.names.en}>{I18n.t("overview_panel.how_to_connect")}</a>
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=Activate"}>{I18n.t("overview_panel.how_to_connect")}</a>
       </p>;
     }
 
