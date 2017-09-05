@@ -182,7 +182,7 @@ class OverviewPanel extends React.Component {
     let disconnect = null;
     if (currentUser.dashboardAdmin) {
       disconnect = <p>
-        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=De-Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email}>{I18n.t("overview_panel.disconnect")}</a>
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=De-Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email} target="_blank">{I18n.t("overview_panel.disconnect")}</a>
        </p>;
     }
 
@@ -203,7 +203,7 @@ class OverviewPanel extends React.Component {
     let connect = null;
     if (currentUser.dashboardAdmin) {
       connect = <p>
-        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email}>{I18n.t("overview_panel.how_to_connect")}</a>
+        <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfkpQxvwozYiFuGjQBZtSungw3SajvkWAIc-XFhokrS0oOElA/viewform?&entry.1427112111=" + currentIdp.names.en + "&entry.1589503449=" + this.props.app.name + "&entry.1819442208=Activate&entry.966666615=" + currentUser.displayName + "&entry.321693976=" + currentUser.email} target="_blank">{I18n.t("overview_panel.how_to_connect")}</a>
       </p>;
     }
 
