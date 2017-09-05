@@ -13,6 +13,7 @@ class CurrentUser {
     this.switchedToIdp = rawUser.switchedToIdp;
     this.uid = rawUser.uid;
     this.localProfile = rawUser.localProfile;
+    this.email = rawUser.email;
   }
 
   getCurrentIdp() {
