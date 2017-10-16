@@ -24,7 +24,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>selfservice</artifactId>
   <packaging>jar</packaging>
-  <name>myUnifiED : selfservice</name>
+  <name>OpenConext : selfservice</name>
 
   <properties>
     <jetty.host>localhost</jetty.host>
