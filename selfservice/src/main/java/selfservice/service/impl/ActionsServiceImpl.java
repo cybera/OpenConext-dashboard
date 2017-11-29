@@ -131,7 +131,7 @@ public class ActionsServiceImpl implements ActionsService {
     body.append("Request: " + action.getType().name() + "\n");
     body.append("Applicant name: " + action.getUserName() + "\n");
     body.append("Applicant email: " + action.getUserEmail() + " \n");
-    body.append("Mail applicant: mailto:" + action.getUserEmail() + "?CC=surfconext-beheer@surfnet.nl&SUBJECT=[" + action.getJiraKey().orElse("???") + "]%20" + action.getType().name() + "%20to%20" + action.getSpName() + "&BODY=Beste%20" + action.getUserName() + " \n");
+    body.append("Mail applicant: mailto:" + action.getUserEmail() + "?CC=pika-admin@cybera.ca&SUBJECT=[" + action.getJiraKey().orElse("???") + "]%20" + action.getType().name() + "%20to%20" + action.getSpName() + "&BODY=Beste%20" + action.getUserName() + " \n");
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:MM");
     body.append("Time: " + sdf.format(new Date()) + "\n");

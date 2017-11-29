@@ -52,16 +52,16 @@ public class JiraClientImpl implements JiraClient {
 
   private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
 
-  private static final String SP_CUSTOM_FIELD = "13018";
-  private static final String IDP_CUSTOM_FIELD = "13012";
-  private static final String DEFAULT_SECURITY_LEVEL_ID = "10100";
+  private static final String SP_CUSTOM_FIELD = "10807";
+  private static final String IDP_CUSTOM_FIELD = "10806";
+  private static final String DEFAULT_SECURITY_LEVEL_ID = "10102";
   private static final String PRIORITY_MEDIUM_ID = "3";
 
   private static final Map<Action.Type, String> TASKTYPE_TO_ISSUETYPE_CODE = ImmutableMap.of(
-    Type.QUESTION, "11103",
-    Type.LINKREQUEST, "11104",
-    Type.UNLINKREQUEST, "11105",
-    Type.CHANGE, "11106");
+    Type.QUESTION, "10605",
+    Type.LINKREQUEST, "10606",
+    Type.UNLINKREQUEST, "10607",
+    Type.CHANGE, "10608");
 
   private final String baseUrl;
   private final RestTemplate restTemplate;
