@@ -26,7 +26,7 @@ public enum ShibbolethHeader {
   Shib_UserStatus("Shib-userStatus"),
   Shib_Accountstatus("Shib-accountstatus"),
   Shib_VoName("Shib-voName"),
-  Shib_MemberOf("Shib-memberOf");
+  Shib_MemberOf("Shib-memberOf"),
   Shib_SchacPersonalUniqueCode("Shib-schacPersonalUniqueCode");
 
   private final String value;

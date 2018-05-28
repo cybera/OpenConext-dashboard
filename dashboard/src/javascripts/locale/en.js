@@ -29,7 +29,7 @@ I18n.translations.en = {
     title: "Dashboard",
     welcome: "Welcome,",
     links: {
-      help_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Help Pika Dashboard</a>",
+      help_html: "<a href=\"https://wiki.cybera.ca/display/PF/About\" target=\"_blank\">Help Pika Dashboard</a>",
       logout: "Logout",
       exit: "Exit"
     },
@@ -216,7 +216,7 @@ I18n.translations.en = {
       "http://refedsorg/category/research-and-scholarship": "Research and Scholarship"
     },
     aansluitovereenkomst: "Connection Policy",
-    aansluitovereenkomstRefused: "This service has refused to sign the 'SURFconext connection agreement' with SURF. Read more about the SURF policy on the <a href=\"https://wiki.surfnet.nl/display/surfconextdev/Afspraken+-+contracten+-+trustframework\" target=\"_blank\">SURF wiki</a>."
+    aansluitovereenkomstRefused: "This service has refused to sign the 'Pika connection agreement' with Pika. Read more about the Pika policy on the <a href=\"https://wiki.surfnet.nl/display/surfconextdev/Afspraken+-+contracten+-+trustframework\" target=\"_blank\">Pika wiki</a>."
   },
 
   attributes_policy_panel: {
@@ -233,7 +233,7 @@ I18n.translations.en = {
     motivationInfo: "The colomn ‘motivation‘ contains, to the extent available, the explanation of the supplier why they need this attribute.",
     motivation: "Motivation",
     no_attribute_value: "<no value received>",
-    filterInfo: "To minimize the data passed on from institution to the service, SURFconext sometimes filters attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
+    filterInfo: "To minimize the data passed on from institution to the service, Pika sometimes filters attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
   },
   idp_usage_panel: {
     title: "Used by",
@@ -255,7 +255,7 @@ I18n.translations.en = {
   },
   privacy_panel: {
     title: "AVG Information",
-    subtitle: "Since 2017, SURFnet requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
+    subtitle: "Since 2017, Pika requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
     subtitle2: "The provider of the service {{name}} has supplied the following information (if any):",
     question: "Question",
     answer: "Answer",
@@ -268,8 +268,8 @@ I18n.translations.en = {
     privacyPolicyUrl: "WHAT IS THE PRIVACY POLICY URL?",
     securityMeasures: "WHAT SECURITY MEASURES HAS THE SUPPLIER TAKEN?",
     snDpaWhyNot: "IF NO, WHAT ARTICLES POSE A PROBLEM & WHY?",
-    surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH SURFMARKET?",
-    surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE SURF MODEL DPA?",
+    surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH PIKA?",
+    surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE PIKA MODEL DPA?",
     whatData: "WHAT (KIND OF) DATA IS PROCESSED?",
     certificationValidFrom: "CERTIFICATION VALID FROM",
     certificationValidTo: "CERTIFICATION VALID TO",
@@ -319,7 +319,7 @@ I18n.translations.en = {
     single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. Pika will contact you to discuss the activation process after it has received your request.",
     terms_title: "By requesting an activation you accept these terms",
     wiki: "wiki for this service",
-    aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the SURF 'aansluitovereenkomst'.",
+    aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the Pika 'aansluitovereenkomst'.",
     not_published_in_edugain_idp: "eduGAIN service",
     not_published_in_edugain_idp_info: "The service {{name}} can not be connected because your institution is not published in eduGAIN. To publish your institution in eduGAIN, please tick 'Published in eduGAIN' under 'My Institute' and create a change request.",
     edit_my_idp_link: "Create change request in 'My Institute'"
@@ -364,8 +364,8 @@ I18n.translations.en = {
   },
 
   footer: {
-    surfnet_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Pika</a>",
-    terms_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Terms of Service</a>",
+    surfnet_html: "<a href=\"https://wiki.cybera.ca/display/PF/About\" target=\"_blank\">Pika</a>",
+    terms_html: "<a href=\"https://wiki.cybera.ca/display/PF/About\" target=\"_blank\">Terms of Service</a>",
     contact_html: "<a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>"
   },
 

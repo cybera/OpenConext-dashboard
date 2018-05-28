@@ -1,6 +1,5 @@
 import React from "react";
 import I18n from "i18n-js";
-import Link from "react-router/Link";
 import moment from "moment";
 
 import LicenseInfo from "./license_info";
