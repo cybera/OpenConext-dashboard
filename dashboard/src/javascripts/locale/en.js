@@ -198,9 +198,6 @@ I18n.translations.en = {
     normen_kader: "Information regarding AVG/GDPR",
     normen_kader_html: "For this service the supplier has published information stating which data they process and where they process this data. You can find this information on the <a href=\"https://wiki.surfnet.nl/pages/viewpage.action?pageId=60689334\" target=\"_blank\">wiki</a>. During 2018 we will incorporate this information in a new version of this Dashboard.",
     no_normen_kader_html: "For this service the supplier has not yet provided AVG/GDPR information; information stating which data they process and where they process this data can be requested at the supplier.",
-    normen_kader: "Framework of Legal Standards for Cloud Services in Higher Education",
-    normen_kader_html: "{{name}} has published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education <a href=\"{{link}}\" target=\"_blank\">online</a>. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">Pika website</a>",
-    no_normen_kader_html: "{{name}} has not published its compliance and possible noncompliance with the Framework of Legal Standards for Cloud Services in Higher Education. For more information about the Framework see the <a href=\"https://www.surf.nl/en/knowledge-and-innovation/knowledge-base/2013/framework-of-legal-standards-for-cloud-services-in-higher-education.html\" target=\"_blank\">Pika website</a>",
     single_tenant_service: "Single tenant service",
     single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">Pika wiki</a>",
     interfed_source: "Federation source:",
@@ -212,7 +209,7 @@ I18n.translations.en = {
       "http://refedsorg/category/research-and-scholarship": "Research and Scholarship"
     },
     aansluitovereenkomst: "Connection Policy",
-    aansluitovereenkomstRefused: "This service has refused to sign the 'SURFconext connection agreement' with SURF. Read more about the SURF policy on the <a href=\"https://wiki.surfnet.nl/display/surfconextdev/Afspraken+-+contracten+-+trustframework\" target=\"_blank\">SURF wiki</a>."
+    aansluitovereenkomstRefused: "This service has refused to sign the 'Pika connection agreement' with Pika. Read more about the Pika policy on the <a href=\"https://wiki.surfnet.nl/display/surfconextdev/Afspraken+-+contracten+-+trustframework\" target=\"_blank\">Pika wiki</a>."
   },
 
   attributes_policy_panel: {
@@ -229,7 +226,7 @@ I18n.translations.en = {
     motivationInfo: "The colomn ‘motivation‘ contains, to the extent available, the explanation of the supplier why they need this attribute.",
     motivation: "Motivation",
     no_attribute_value: "<no value received>",
-    filterInfo: "To minimize the data passed on from institution to the service, SURFconext sometimes filters attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
+    filterInfo: "To minimize the data passed on from institution to the service, Pika sometimes filters attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
   },
   idp_usage_panel: {
     title: "Used by",
@@ -251,7 +248,7 @@ I18n.translations.en = {
   },
   privacy_panel: {
     title: "AVG Information",
-    subtitle: "Since 2017, SURFnet requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
+    subtitle: "Since 2017, Pika requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
     subtitle2: "The provider of the service {{name}} has supplied the following information (if any):",
     question: "Question",
     answer: "Answer",
@@ -264,8 +261,8 @@ I18n.translations.en = {
     privacyPolicyUrl: "WHAT IS THE PRIVACY POLICY URL?",
     securityMeasures: "WHAT SECURITY MEASURES HAS THE SUPPLIER TAKEN?",
     snDpaWhyNot: "IF NO, WHAT ARTICLES POSE A PROBLEM & WHY?",
-    surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH SURFMARKET?",
-    surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE SURF MODEL DPA?",
+    surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH PIKA?",
+    surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE PIKA MODEL DPA?",
     whatData: "WHAT (KIND OF) DATA IS PROCESSED?",
     certificationValidFrom: "CERTIFICATION VALID FROM",
     certificationValidTo: "CERTIFICATION VALID TO",
@@ -315,7 +312,7 @@ I18n.translations.en = {
     single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. Pika will contact you to discuss the activation process after it has received your request.",
     terms_title: "By requesting an activation you accept these terms",
     wiki: "wiki for this service",
-    aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the SURF 'aansluitovereenkomst'.",
+    aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the Pika 'aansluitovereenkomst'.",
     not_published_in_edugain_idp: "eduGAIN service",
     not_published_in_edugain_idp_info: "The service {{name}} can not be connected because your institution is not published in eduGAIN. To publish your institution in eduGAIN, please tick 'Published in eduGAIN' under 'My Institute' and create a change request.",
     edit_my_idp_link: "Create change request in 'My Institute'"
@@ -360,7 +357,7 @@ I18n.translations.en = {
   },
 
   footer: {
-    surfnet_html: "<a href=\"https://www.surfnet.nl/en\" target=\"_blank\">SURFnet</a>",
+    surfnet_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Pika</a>",
     terms_html: "<a href=\"https://wiki.cybera.ca/display/KFPC/Pika+Federation\" target=\"_blank\">Terms of Service</a>",
     contact_html: "<a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>"
   },
