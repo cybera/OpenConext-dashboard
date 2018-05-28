@@ -1,6 +1,6 @@
 # SURFconext Dashboard
 
-[![Build Status](https://travis-ci.org/OpenConext/OpenConext-dashboard.svg)](https://travis-ci.org/OpenConext/OpenConext-dashboard)
+[![Build Status](https://travis-ci.org/cybera/OpenConext-dashboard.svg)](https://travis-ci.org/cybera/OpenConext-dashboard)
 [![codecov.io](https://codecov.io/github/OpenConext/OpenConext-dashboard/coverage.svg)](https://codecov.io/github/OpenConext/OpenConext-dashboard)
 
 ## About OpenConext
