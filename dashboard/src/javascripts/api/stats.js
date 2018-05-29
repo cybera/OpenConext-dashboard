@@ -1,6 +1,6 @@
 import qs from "qs";
 
-export const STATS_HOST = "https://stats.myunified.ca";
+export const STATS_HOST = "https://stats.pikafederation.ca";
 const apiPath = `${STATS_HOST}/api/v1`;
 
 export function apiUrl(path) {

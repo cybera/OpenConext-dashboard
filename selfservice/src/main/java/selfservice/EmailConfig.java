@@ -18,7 +18,7 @@ public class EmailConfig {
   @Bean
   @Profile("!dev")
   public EmailService emailService(JavaMailSender mailSender, @Value("${coin-administrative-email}") String administrativeEmail) {
-    administrativeEmail = "myunified-admin@cybera.ca";
+    administrativeEmail = "pika-admin@cybera.ca";
     return new EmailServiceImpl(administrativeEmail, new EmailerImpl(mailSender));
   }
 
