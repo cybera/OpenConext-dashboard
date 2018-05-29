@@ -188,6 +188,8 @@ class AppOverview extends React.Component {
       return "yes";
     case false:
       return "no";
+    default:
+      return "unknown";
     }
   }
 
