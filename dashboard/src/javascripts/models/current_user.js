@@ -12,6 +12,7 @@ class CurrentUser {
     this.superUser = rawUser.superUser;
     this.switchedToIdp = rawUser.switchedToIdp;
     this.uid = rawUser.uid;
+    this.email = rawUser.email;
     this.statsEnabled = rawUser.statsEnabled;
   }
 
