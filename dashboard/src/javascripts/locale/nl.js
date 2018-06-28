@@ -7,13 +7,13 @@
 import I18n from "i18n-js";
 
 I18n.translations.nl = {
-    code: "NL",
-    name: "Nederlands",
+    code: "FR",
+    name: "French",
     select_locale: "Selecteer Nederlands",
 
     boolean: {
-        yes: "Ja",
-        no: "Nee"
+        yes: "Oui",
+        no: "Non"
     },
 
     browser_not_supported: {

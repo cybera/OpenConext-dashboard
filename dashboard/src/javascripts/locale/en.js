@@ -29,7 +29,7 @@ I18n.translations.en = {
         title: "Dashboard",
         welcome: "Welcome,",
         links: {
-            help_html: "<a href=\"https://wiki.surfnet.nl/display/surfconextdev/Beschikbare+diensten+activeren#Beschikbaredienstenactiveren-HandleidingSURFconextDashboard\" target=\"_blank\">Help SURFconext Dashboard</a>",
+            help_html: "<a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Help Pika Dashboard</a>",
             logout: "Logout",
             exit: "Exit"
         },
@@ -68,7 +68,7 @@ I18n.translations.en = {
             },
             license: {
                 has_license_sp: "Yes, with service provider",
-                has_license_surfmarket: "Yes, with SURFmarket",
+                has_license_surfmarket: "Yes, with Pika",
                 name: "License",
                 not_needed: "Not needed",
                 unknown: "Unknown",
@@ -87,7 +87,7 @@ I18n.translations.en = {
             },
             interfed_source: {
                 name: "Federation source",
-                surfconext: "SURFconext",
+                surfconext: "Pika",
                 edugain: "eduGAIN",
                 entree: "Entree"
             },
@@ -97,7 +97,7 @@ I18n.translations.en = {
                 research_and_scholarship: "Research and Scholarship"
             },
             strong_authentication: {
-                name: "Supports SURFsecureID",
+                name: "Supports PikaSecureID",
                 yes: "Yes",
                 no: "No"
             },
@@ -149,7 +149,7 @@ I18n.translations.en = {
         website: "Website",
         support: "Support pages",
         login: "Login page",
-        registration_info_html: "This Service Provider is available in SURFconext through <a href=\"https://support.surfconext.nl/edugain\" target=\"_blank\">eduGAIN</a>. The Service Provider is registered by the following federation: <a href=\"{{url}}\" target=\"_blank\">{{url}}</a>.",
+        registration_info_html: "This Service Provider is available in Pika through <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">eduGAIN</a>. The Service Provider is registered by the following federation: <a href=\"{{url}}\" target=\"_blank\">{{url}}</a>.",
         registration_policy: "Registration policy",
         privacy_statement: "Privacy statement",
         metadata_link: "Metadata"
@@ -157,29 +157,29 @@ I18n.translations.en = {
 
     license_info_panel: {
         title: "License information",
-        has_license_surfmarket_html: "There is a valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
+        has_license_surfmarket_html: "There is a valid license available via <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika</a>.",
         has_license_sp_html: "A license for <a href=\"{{serviceUrl}}\" target=\"_blank\">{{serviceName}}</a> can be acquired from the supplier of this service.",
         has_license_sp_html_no_service_url: "A license for {{serviceName}} can be acquired from the supplier of this service.",
-        no_license_html: "Your institution has no valid license available via <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.",
+        no_license_html: "Your institution has no valid license available via <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika</a>.",
         not_needed_html: "This Service does not require a license.",
         unknown_license: "It is unknown whether a license is required or not.",
         no_license_description_html: "" +
         "<ul>" +
-        "   <li>Your institution can obtain a license from <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>.</li>" +
+        "   <li>Your institution can obtain a license from <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika</a>.</li>" +
         "</ul>" +
         "<br />In some cases this license needs to be obtained directly from the service supplier.",
         unknown_license_description_html: "There could be multiple reasons:" +
         "<ul>" +
-        "   <li>SURF or another institution is offering this service for free.</li>" +
+        "   <li>Pika or another institution is offering this service for free.</li>" +
         "   <li>The license needs to be obtained directly from the service supplier.</li>" +
-        "   <li>The license hasn't been added to <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a>'s administration yet.</li>" +
+        "   <li>The license hasn't been added to <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika</a>'s administration yet.</li>" +
         "</ul>" +
-        "<p>If necessary, SURFnet will contact the service supplier or <a href=\"https://www.surfmarket.nl\" target=\"_blank\">SURFmarket</a> before activating the connection.</p>"
+        "<p>If necessary, Pika will contact the service supplier or <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika</a> before activating the connection.</p>"
     },
 
     license_info: {
         unknown_license: "No license information available",
-        has_license_surfmarket: "License available via SURFmarket",
+        has_license_surfmarket: "License available via Pika",
         has_license_sp: "License available via service supplier",
         no_license: "No license available",
         no_license_needed: "No license needed",
@@ -189,7 +189,7 @@ I18n.translations.en = {
     },
 
     overview_panel: {
-        wiki_info_html: "Extra information is available for this services in the SURFconext <a href=\"{{link}}\" target=\"_blank\">wiki</a>.",
+        wiki_info_html: "Extra information is available for this services in the Pika <a href=\"{{link}}\" target=\"_blank\">wiki</a>.",
         no_description: "The description of this service is not available.",
         description: "Description",
         has_connection: "Active connection",
@@ -200,17 +200,17 @@ I18n.translations.en = {
         normen_kader_html: "For this service the supplier has published information stating which data they process and where they process this data. You can find this information on the <a href=\"https://wiki.surfnet.nl/pages/viewpage.action?pageId=60689334\" target=\"_blank\">wiki</a>. During 2018 we will incorporate this information in a new version of this Dashboard.",
         no_normen_kader_html: "For this service the supplier has not yet provided AVG/GDPR information; information stating which data they process and where they process this data can be requested at the supplier.",
         single_tenant_service: "Single tenant service",
-        single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.surfnet.nl/display/services/(Cloud)services\" target=\"_blank\">SURFnet wiki</a>",
+        single_tenant_service_html: "{{name}} is a single tenant service and as such requires a separate instance for each institution that wants to connect to this service. For more information about single tenant services see the <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika wiki</a>",
         interfed_source: "Federation source:",
         publish_in_edugain_date: "Published in eduGAIN on:",
-        supports_ssa: "Supports SURFsecureID",
+        supports_ssa: "Supports PikaSecureID",
         entity_categories: "Supported Entity Categories",
         entity_category: {
             "http://wwwgeantnet/uri/dataprotection-code-of-conduct/v1": "GÉANT Data Protection Code of Conduct",
             "http://refedsorg/category/research-and-scholarship": "Research and Scholarship"
         },
         aansluitovereenkomst: "Connection Policy",
-        aansluitovereenkomstRefused: "This service has refused to sign the 'SURFconext connection agreement' with SURF. Read more about the SURF policy on the <a href=\"https://wiki.surfnet.nl/display/surfconextdev/Afspraken+-+contracten+-+trustframework\" target=\"_blank\">SURF wiki</a>."
+        aansluitovereenkomstRefused: "This service has refused to sign the 'Pika connection agreement' with Pika. Read more about the Pika policy on the <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">Pika wiki</a>."
     },
 
     attributes_policy_panel: {
@@ -227,7 +227,7 @@ I18n.translations.en = {
         motivationInfo: "The colomn ‘motivation‘ contains, to the extent available, the explanation of the supplier why they need this attribute.",
         motivation: "Motivation",
         no_attribute_value: "<no value received>",
-        filterInfo: "To minimize the data passed on from institution to the service, SURFconext sometimes filters the values of attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
+        filterInfo: "To minimize the data passed on from institution to the service, Pika sometimes filters the values of attributes. For instance the filter 'urn*' will filter out all values for that attribute that do not start with ‘urn’."
     },
     idp_usage_panel: {
         title: "Used by",
@@ -249,7 +249,7 @@ I18n.translations.en = {
     },
     privacy_panel: {
         title: "AVG Information",
-        subtitle: "Since 2017, SURFnet requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
+        subtitle: "Since 2017, Pika requests new connecting SP's to supply some AVG information. Over time, we expect to have that information from more and more services.",
         subtitle2: "The provider of the service {{name}} has supplied the following information (if any):",
         question: "Question",
         answer: "Answer",
@@ -262,8 +262,8 @@ I18n.translations.en = {
         privacyPolicyUrl: "WHAT IS THE PRIVACY POLICY URL?",
         securityMeasures: "WHAT SECURITY MEASURES HAS THE SUPPLIER TAKEN?",
         snDpaWhyNot: "IF NO, WHAT ARTICLES POSE A PROBLEM & WHY?",
-        surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH SURFMARKET?",
-        surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE SURF MODEL DPA?",
+        surfmarketDpaAgreement: "DID THE SUPPLIER AGREE A DPA WITH PIKA?",
+        surfnetDpaAgreement: "IS THE SUPPLIER WILLING TO SIGN THE PIKA MODEL DPA?",
         whatData: "WHAT (KIND OF) DATA IS PROCESSED?",
         certificationValidFrom: "CERTIFICATION VALID FROM",
         certificationValidTo: "CERTIFICATION VALID TO",
@@ -278,23 +278,23 @@ I18n.translations.en = {
         cancel: "Cancel",
         check: "Check the",
         checklist: "Finish this checklist before activating the connection:",
-        processing_agreements: "Check whether your institution needs a <a href=\"https://www.surf.nl/nieuws/2016/08/ondersteuning-surfmarket-bij-sluiten-bewerkersovereenkomsten.html\" target=\"_blank\">processing agreement</a> for this service, and if so, has signed one.",
-        comments_description: "Comments will be sent to SURFconext.",
+        processing_agreements: "Check whether your institution needs a <a href=\"https://wiki.cybera.ca/display/PF/\" target=\"_blank\">processing agreement</a> for this service, and if so, has signed one.",
+        comments_description: "Comments will be sent to Pika.",
         comments_placeholder: "Enter comments here...",
         comments_title: "Any additional comments?",
         connect: "Activate service",
         connect_title: "Connect {{app}}",
         disconnect: "Deactivate service",
         disconnect_title: "Deactivate connection with {{app}}",
-        done_disconnect_subtitle_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>.",
-        done_disconnect_subtitle_html_with_jira_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a> and include the following ticket number in the subject: {{jiraKey}}.",
+        done_disconnect_subtitle_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>.",
+        done_disconnect_subtitle_html_with_jira_html: "You will be contacted about the further steps needed to finalize this deactivation. If you have any questions before that, please contact <a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a> and include the following ticket number in the subject: {{jiraKey}}.",
         done_disconnect_title: "Deactivation requested!",
-        done_subtitle_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>.",
-        done_subtitle_with_jira_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:support@surfconext.nl?subject=Question about connection {{jiraKey}}\">support@surfconext.nl</a> and include the following ticket number in the subject: {{jiraKey}}.",
+        done_subtitle_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>.",
+        done_subtitle_with_jira_html: "You will be contacted about the further steps needed to finalize this connection. If you have any questions before that, please contact <a href=\"mailto:pika-admin@cybera.ca?subject=Question about connection {{jiraKey}}\">pika-admin@cybera.ca</a> and include the following ticket number in the subject: {{jiraKey}}.",
         done_title: "Connection made!",
         forward_permission: {
             after: " to {{app}}.",
-            before: "SURFnet has permission to forward the ",
+            before: "Pika has permission to forward the ",
         },
         info_sub_title: "You can activate a connection from this dashboard. We advise you to follow the checklist and check the specific information for this app before you activate.",
         info_title: "Activate connection",
@@ -311,10 +311,10 @@ I18n.translations.en = {
             before: "It is the responsibility of my institution to provide the correct ",
         },
         read: "Read the",
-        single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. SURFnet will contact you to discuss the activation process after it has received your request.",
+        single_tenant_service_warning: "Requests for activating a single tenant services take longer to process. Pika will contact you to discuss the activation process after it has received your request.",
         terms_title: "By requesting an activation you accept these terms",
         wiki: "wiki for this service",
-        aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the SURF 'aansluitovereenkomst'.",
+        aansluitovereenkomst_accept: "I hereby certify that I agree with connecting to a service which has not signed the Pika 'aansluitovereenkomst'.",
         not_published_in_edugain_idp: "eduGAIN service",
         not_published_in_edugain_idp_info: "The service {{name}} can not be connected because your institution is not published in eduGAIN. To publish your institution in eduGAIN, please tick 'Published in eduGAIN' under 'My Institute' and create a change request.",
         edit_my_idp_link: "Create change request in 'My Institute'"
@@ -324,7 +324,7 @@ I18n.translations.en = {
     application_usage_panel: {
         title: "Service usage",
         download: "Export",
-        error_html: "Stats are currently unavailable. <a href=\"mailto:support@surfconext.nl\">Contact support</a> for more information."
+        error_html: "Stats are currently unavailable. <a href=\"mailto:pika-admin@cybera.ca\">Contact support</a> for more information."
     },
 
     contact: {
@@ -350,7 +350,7 @@ I18n.translations.en = {
 
     server_error: {
         title: "You don't have sufficient access right to access the Dashboard application.",
-        description_html: "Please contact <a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a> if you think this is incorrect."
+        description_html: "Please contact <a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a> if you think this is incorrect."
     },
 
     logout: {
@@ -359,24 +359,24 @@ I18n.translations.en = {
     },
 
     footer: {
-        surfnet_html: "<a href=\"https://www.surfnet.nl/en\" target=\"_blank\">SURFnet</a>",
+        surfnet_html: "<a href=\"https://wiki.cybera.ca/display/PF\" target=\"_blank\">Pika</a>",
         terms_html: "<a href=\"https://wiki.surfnet.nl/display/conextsupport/Terms+of+Service+%28EN%29\" target=\"_blank\">Terms of Service</a>",
-        contact_html: "<a href=\"mailto:support@surfconext.nl\">support@surfconext.nl</a>"
+        contact_html: "<a href=\"mailto:pika-admin@cybera.ca\">pika-admin@cybera.ca</a>"
     },
 
     my_idp: {
         title: "My institute",
-        sub_title_html: "The following roles have been assigned (<a target=\"_blank\" href=\"https://wiki.surfnet.nl/display/surfconextdev/Beschikbare+diensten+activeren#Beschikbaredienstenactiveren-HoekunjeopSURFconextaangeslotendienstenactiveren?\">more info</a>):",
+        sub_title_html: "The following roles have been assigned (<a target=\"_blank\" href=\"https://wiki.cybera.ca/display/PF/\">more info</a>):",
         role: "Role",
         users: "User(s)",
         settings: "Settings for my own institute and services",
-        settings_text: "This section contains several settings of your institute and the Service Provider(s) provided to SURFconext by your institute. These settings are used in SURFconext, for instance in the Where Are You From page. If you would like to change something, please press 'Create change request'.",
-        SURFconextverantwoordelijke: "SURFconext owner",
-        SURFconextbeheerder: "SURFconext maintainer",
+        settings_text: "This section contains several settings of your institute and the Service Provider(s) provided to Pika by your institute. These settings are used in Pika, for instance in the Where Are You From page. If you would like to change something, please press 'Create change request'.",
+        SURFconextverantwoordelijke: "Pika owner",
+        SURFconextbeheerder: "Pika maintainer",
         "Dashboard supergebruiker": "Dashboard Super User",
         services_title: "Services provided by your institute:",
         service_name: "Service name",
-        license_contact_html: "Primary License contact person (<a target=\"_blank\" href=\"https://wiki.surfnet.nl/display/surfconextdev/Beschikbare+diensten+activeren#Beschikbaredienstenactiveren-HoekunjeopSURFconextaangeslotendienstenactiveren?\">more info</a>):",
+        license_contact_html: "Primary License contact person (<a target=\"_blank\" href=\"https://wiki.cybera.ca/display/PF/\">more info</a>):",
         license_contact_name: "Name",
         license_contact_email: "Email",
         license_contact_phone: "Phonenumber",
@@ -386,11 +386,11 @@ I18n.translations.en = {
         entity_id: "Entity ID",
         name: {
             en: "Name (en)",
-            nl: "Name (nl)"
+            nl: "Name (fr)"
         },
         keywords: {
             en: "Keywords (en)",
-            nl: "Keywords (nl)"
+            nl: "Keywords (fr)"
         },
         published_in_edugain: "Published in eduGAIN",
         date_published_in_edugain: "Date published in eduGAIN",
@@ -408,14 +408,14 @@ I18n.translations.en = {
         },
         description: {
             en: "Description (en)",
-            nl: "Description (nl)"
+            nl: "Description (fr)"
         },
         guest_enabled: "Guest access enabled",
         consent_settings: "Type of consent",
         no_consent_required: "Consent disabled",
         minimal_consent_required: "Minimal consent",
         default_consent_required: "Default consent",
-        consent_explained_html: "The different settings for consent are explained on <a target=\"_blank\" href=\"https://wiki.surfnet.nl/display/conextsupport/Het+Consent-scherm\">this wiki page</a>.",
+        consent_explained_html: "The different settings for consent are explained on <a target=\"_blank\" href=\"https://wiki.cybera.ca/display/PF/\">this wiki page</a>.",
         edit_message: "You are able to edit the following fields.",
         save: "Create change request",
         change_request_created: "Successfully created your change request.",
@@ -429,7 +429,7 @@ I18n.translations.en = {
         flash: "Authorization policy '{{policyName}}' was successfully {{action}}",
         flash_created: "created",
         flash_deleted: "deleted",
-        flash_first: "This is the first authorization policy for this service. Before it becomes active, the SURFconext Team must manually perform a configuration change. A notification has been sent to the SURFconext Team. They will get in touch with you.",
+        flash_first: "This is the first authorization policy for this service. Before it becomes active, the Pika Team must manually perform a configuration change. A notification has been sent to the Pika Team. They will get in touch with you.",
         flash_updated: "updated",
         new_policy: "New authorization policy",
         how_to: "How-to",
@@ -561,7 +561,7 @@ I18n.translations.en = {
 
     profile: {
         title: "Profile",
-        sub_title: "The following profile data has been provided by your home institution. This data as well as your group membership data (e.g.SURFteams) will be stored in SURFconext and shared with services accessed via SURFconext.",
+        sub_title: "The following profile data has been provided by your home institution. This data as well as your group membership data (e.g.Pika Teams) will be stored in Pika and shared with services accessed via Pika.",
         my_attributes: "My attributes",
         attribute: "Attribute",
         value: "Value",
@@ -571,11 +571,11 @@ I18n.translations.en = {
         role_description: "Description",
         roles: {
             ROLE_DASHBOARD_ADMIN: {
-                name: "SURFconext owner",
+                name: "Pika owner",
                 description: "You are authorized on behalf of your institution to manage the service connections"
             },
             ROLE_DASHBOARD_VIEWER: {
-                name: "SURFconext maintainer",
+                name: "Pika maintainer",
                 description: "You are authorized on behalf of your institution to view the information about the services"
             },
             ROLE_DASHBOARD_SUPER_USER: {
@@ -658,15 +658,15 @@ I18n.translations.en = {
             },
             "Shib-userStatus": {
                 name: "Userstatus",
-                description: "Status of this user in SURFconext"
+                description: "Status of this user in Pika"
             },
             "Shib-accountstatus": {
                 name: "Accountstatus",
-                description: "Status of this account in SURFconext"
+                description: "Status of this account in Pika"
             },
             "name-id": {
                 name: "Identifier",
-                description: "Status of this account in SURFconext"
+                description: "Status of this account in Pika"
             },
             "Shib-voName": {
                 name: "Virtual Organisation Name",
@@ -674,11 +674,11 @@ I18n.translations.en = {
             },
             "Shib-user": {
                 name: "Identifier",
-                description: "Status of this account in SURFconext"
+                description: "Status of this account in Pika"
             },
             "Shib-memberOf": {
                 name: "Membership",
-                description: "Membership of Virtual Organizations and SURFconext."
+                description: "Membership of Virtual Organizations and Pika."
             }
         }
     }
