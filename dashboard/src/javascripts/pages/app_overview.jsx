@@ -123,9 +123,11 @@ class AppOverview extends React.Component {
         switch (app.licenseStatus) {
             case "HAS_LICENSE_SURFMARKET":
             case "HAS_LICENSE_SP":
-                return "yes";
-            case "NO_LICENSE":
                 return "no";
+            case "NO_LICENSE":
+                return "yes";
+            case "NOT_NEEDED":
+                return "yes";
             default:
                 return "";
         }
