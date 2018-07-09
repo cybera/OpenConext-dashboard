@@ -494,7 +494,7 @@ I18n.translations.en = {
         deny_info: "Deny policies are less common to use. If the attributes in the policy match those of the person trying to login then this will result in a Deny. No match will result in a Permit.",
         deny_message: "Deny message",
         deny_message_info: "This is the message displayed to the user if access is denied based on this policy.",
-        deny_message_nl: "Deny message in Dutch",
+        deny_message_nl: "Deny message in French",
         description: "Description",
         idps_placeholder: "Select the Identity Providers - zero or more",
         institutions: "Institutions",
