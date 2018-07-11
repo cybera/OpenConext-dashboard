@@ -43,8 +43,8 @@ public class ServicesImpl implements Services {
             boolean allowedBySp = sp.isAllowedAll() || sp.getAllowedEntityIds().contains(idpEntityId);
             service.setConnected(connectedToIdentityProvider && allowedBySp);
             return service;
-        }).filter(service -> !service.isIdpVisibleOnly() || service.isConnected() ||
-            (service.getInstitutionId() != null &&service.getInstitutionId().equals(identityProvider.getInstitutionId())))
+        }).filter(service -> !service.getSpName().toLowerCase().startsWith("pika") && (!service.isIdpVisibleOnly() || service.isConnected() ||
+            (service.getInstitutionId() != null &&service.getInstitutionId().equals(identityProvider.getInstitutionId()))))
             .collect(toList());
         return services;
     }
