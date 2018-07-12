@@ -108,8 +108,16 @@ if (browserSupported()) {
       const locationHash = window.location.hash.substr(1);
       currentUser.statsToken = locationHash.substr(locationHash.indexOf("access_token=")).split("&")[0].split("=")[1];
 
-    render(<App currentUser={currentUser} />, document.getElementById("app"));
-  });
+      if (!currentUser.statsToken && currentUser.statsEnabled) {
+        window.location = currentUser.statsUrl + "&state=" + window.location;
+      } else {
+        const spinner = document.getElementById("service-loader-id");
+        spinner.parentNode.removeChild(spinner);
+        const info = document.getElementById("service-loader-info-id");
+        info.parentNode.removeChild(info);
+        render(<App currentUser={currentUser}/>, document.getElementById("app"));
+      }
+    });
 } else {
   render(<BrowserNotSupported/>, document.getElementById("app"));
 }
